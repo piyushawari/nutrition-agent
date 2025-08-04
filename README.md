@@ -1,46 +1,37 @@
-🧠 Nutrition Agent – Smart AI Nutrition Assistant
-A next-gen nutrition assistant powered by IBM Watsonx, USDA API, and Generative AI that delivers personalized meal suggestions and explains their nutritional benefits in real time.
+# 🧠 Nutrition Agent - Smartest AI Nutrition Assistant
 
-🚀 Features
-Nutritional Data Lookup – Enter any food name and instantly retrieve accurate nutrition details from the USDA FoodData Central API.
+This project uses **IBM Watsonx**, **USDA API**, and **generative AI** to create a smart, interactive nutrition agent that provides personalized meal suggestions.
 
-Condition-Based Meal Planning – Get meal suggestions tailored for specific health conditions (e.g., diabetes, heart health).
+## 🚀 Features
+- Accepts food name input and retrieves nutritional data via the USDA API.
+- Suggests healthy meals for specific health conditions (like diabetes).
+- Explains nutritional benefits using LLM-powered reasoning.
+- Interactive prompt testing through Watsonx Agent Studio.
 
-AI-Powered Explanations – Understand the why behind each meal suggestion with reasoning powered by LLMs.
+## 🔧 Technologies Used
+- IBM Watsonx.ai Studio
+- IBM Cloud Lite (deployment)
+- USDA FoodData Central API
+- Python
 
-Interactive Testing – Test your queries and get instant responses via Watsonx Agent Studio.
+## 🛠 How It Works
+1. User provides food input (e.g., "banana").
+2. Agent fetches nutritional data using the USDA API.
+3. Watsonx agent generates tailored meal recommendations.
+4. Results include caloric breakdown and contextual advice for health conditions.
 
-🔧 Technologies Used
-IBM Watsonx.ai Studio – AI model hosting & reasoning
+## 📁 Files
+- `README.md` – project overview
+- `config.py` – contains your `API_KEY`, `PROJECT_ID`, and `MODEL_ID`
+- `prompt_test_examples.txt` – sample prompts used during testing
+- `screenshot/` – includes interface previews or agent responses
 
-IBM Cloud Lite – Cloud deployment environment
+## 🔐 Notes
+- Ensure you securely store your API Key (do not upload it publicly).
+- IBM allows only one Lite plan instance per service. Upgrade or delete unused ones to redeploy.
 
-USDA FoodData Central API – Reliable nutritional data source
+## 📸 Sample Prompt
+> Suggest a diabetes-friendly breakfast using banana and oats. Explain why it's healthy.
 
-Python – Core backend logic
+---
 
-🛠 How It Works
-User Input – Provide a food name (e.g., "banana").
-
-Data Fetching – Retrieve detailed nutrition data from the USDA API.
-
-AI Reasoning – Watsonx agent generates personalized meal recommendations.
-
-Final Output – Results include caloric breakdown and contextual health advice.
-
-📁 Project Files
-README.md – Project overview & setup guide
-
-config.py – Contains your API_KEY, PROJECT_ID, and MODEL_ID
-
-prompt_test_examples.txt – Sample prompts for testing
-
-screenshot/ – UI previews & example outputs
-
-🔐 Notes
-Store your API key securely — do not upload it publicly.
-
-IBM Cloud Lite allows one Lite plan instance per service — upgrade or delete unused instances before redeploying.
-
-📸 Sample Prompt
-Suggest a diabetes-friendly breakfast using banana and oats. Explain why it's healthy.
